@@ -1,0 +1,44 @@
+body {
+    background-color: #02A486;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 25px !important;
+}
+
+.nav-link {
+    color: white !important;
+    padding-right: 10px;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.CenterDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1400px;
+    height: 450px;
+}
+

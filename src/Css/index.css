@@ -1,0 +1,148 @@
+.Landing {
+  background-image: url("../FOTOS/marG.jpg");
+  height: 900px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+    background-color: transparent;
+  }
+  
+  .navbar-brand {
+    color: white !important;
+    margin: 10px;
+    font-size: 25px !important;
+  }
+  .nav-link {
+    color: white !important;
+  }
+  .btn-transparent {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.mainTitle {
+    color: white;
+    text-align: center;
+    padding-top: 7%;
+  }
+.mainTitle h1 {
+  font-size: 90px;
+  padding-top: 2%;
+}
+
+.mainTitle h1.MasterPiece {
+  padding-right: 28px;
+}
+
+.mainPar {
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.mainPar p {
+  margin-left: 0;
+  padding-left: 15px;
+}
+
+.btn-dark {
+  margin-left: 0;
+  margin-top: 15px;
+}
+.boton-join-us{
+    padding-bottom: 100px !important;
+}
+.FondoBlanco {
+  background-color: white;
+  height: 650px;
+  width: 100%;
+}
+.FondoBlanco h1 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.carousel-item img {
+  height: 300px; 
+  width: 300px; 
+}
+.card-img-top {
+  height: 300px;
+  width: auto;
+  margin-right: 30px;
+}
+.CardsPies {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.CardsPar p {
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+}
+.cardsPar a,
+button.btn-dark {
+  margin-top: 60px;
+}
+.FondoVerde {
+  background-color: #02735f;
+  height: auto;
+  padding: 50px 0;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 150px;
+  height: 200px;
+  text-align: center;
+  color: white;
+}
+
+.texto-vertical {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  display: inline-block;
+  font-size: 30px;
+  transform: scaleY(+1);
+  margin-top: 10px;
+}
+
+.ImgVerde img {
+  height: 250px;
+  width: 550px;
+  display: block;
+  padding-left: 0;
+}
+.contenedor p {
+  margin-top: 25px;
+}
+.contenedor a {
+  color: white;
+}
+.aboutus img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutus .col-6 {
+  padding: 0;
+}
+.aboutus h1,
+p {
+  color: white;
+  text-align: center;
+}

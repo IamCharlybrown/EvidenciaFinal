@@ -1,0 +1,47 @@
+.navbar-brand{
+    color: white !important;
+    font-size: 25px !important;
+    }
+.nav-link{
+    color: white !important;
+    }
+.btn-transparent {
+    border-color: white;
+    color: white; 
+    }
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    }
+    
+.nav-item:not(:last-child) {
+    margin-right: 40px; 
+    }
+    #FotoSurfista {
+        width: 100%;
+        height: auto;
+    }
+    
+    .cuadrado1 {
+        background-color: #02735F;
+        color: white;
+        padding: 70px;
+        text-align: center;
+    }
+    
+    .cuadrado1 a {
+        color: white;
+    }
+    
+    .cuadrado2 {
+        background-image: url("../FOTOS/mapa.jpg");
+        background-size: cover;
+    }
+    
+    .cuadrado3 {
+        background-color: #014337;
+        color: white;
+        padding: 70px;
+        text-align: center;
+    }
+    

@@ -1,0 +1,67 @@
+.navbar-brand {
+  color: white !important;
+  margin: 10px !important;
+  font-size: 25px !important;
+}
+.nav-link {
+  color: white !important;
+  padding-right: 10px;
+}
+.btn-transparent {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.card-img-top {
+  height: 346px;
+  width: 250px;
+}
+
+.col-md-4 {
+  margin-right: 0 !important;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.imagen_surfista {
+  margin-left: 100px;
+  height: 700px;
+}
+
+.fixed-image {
+  position: absolute;
+  top: 46%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  .fixed-image {
+    display: none;
+  }
+}
+
+.card-title {
+  font-size: 16px;
+}
+

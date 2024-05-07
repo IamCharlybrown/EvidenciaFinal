@@ -1,0 +1,91 @@
+<?php
+// Texto del navbar
+$navbar_title = "running works";
+$about_us = "About Us";
+$home = "Home";
+$individual = "Tabla de surf";
+$archive = "Menu";
+$contact = "Contact";
+$get_started = "Get started";
+// Texto e imagenes en lña pagina about.php
+$ruta_imagen_hombre = "imagenes/Hombre.jpg";
+$ruta_imagen_mujer = "imagenes/Mujer.jpg";
+$texto_rectangulo1 = "Welcome to running works. A safe space and platform lorem";
+$texto_rectangulo2 = "Running Works es tu destino para tablas de surf excepcionales. Desde diseños innovadores hasta la más alta calidad, nuestras tablas están hechas para todos, desde principiantes hasta expertos. Descubre el mundo del surf con confianza y estilo con Running Works.";
+$texto_rectangulo3 = "En Running Works, no solo vendemos tablas, creamos experiencias. Nuestra marca es un punto de encuentro para aquellos que buscan la emoción del surf y la calidad inigualable. Únete a nosotros en este viaje donde la pasión y la aventura se encuentran en cada ola.";
+// Texto e imagenes de la pagina individual.php
+$texto_about = "ABOUT US";
+$titulo = "SURFINGBOARD";
+$descripcion = "Descubre la experiencia única de surfear con nuestro increíble SURFINGBOARD. Fabricado con los mejores materiales y diseñado para brindarte el máximo rendimiento en cada ola. Nuestro SURFINGBOARD está diseñado para surfistas de todos los niveles, desde principiantes hasta profesionales. Cuenta con características innovadoras que te permitirán deslizarte suavemente sobre las olas y ejecutar maniobras con facilidad. La construcción de alta calidad garantiza durabilidad y resistencia, mientras que el diseño aerodinámico optimiza la velocidad y la maniobrabilidad. Además, la superficie antideslizante proporciona un agarre seguro, permitiéndote realizar trucos con confianza. Ya sea que estés buscando mejorar tus habilidades o simplemente disfrutar del placer de surfear, nuestro SURFINGBOARD es la elección perfecta. Explora nuevas sensaciones y lleva tu experiencia de surf a un nivel superior con el SURFINGBOARD de running Works. ¡Prepárate para vivir momentos emocionantes en cada ola!";
+$imagen = "imagenes/Tabla.jpg";
+$precio = "240";
+$car = "Add to car";
+// Texto e imagenes de la pagina index.php
+$main_title1 = "FROM SEA WAVES";
+$main_title2 = "TO MASTERPIECE";
+$main_paragraph = "We are a company that produces iconic surfing equipment. We pride ourselves in our proven track-record.";
+$join_us = "Join Us";
+$ultimate_equipment = "The ultimate surfering equipment";
+$card1_image = "./FOTOS/patas2.jpg";
+$card1_content = "Contenido de la carta 1";
+$card2_image = "FOTOS/patas5.jpg";
+$card2_content = "Contenido de la carta 2";
+$card3_image = "FOTOS/patas4.jpg";
+$card3_content = "Contenido de la carta 3";
+$fotoCarrusel1 = "FOTOS/FotoCarrusel1.jpg";
+$fotoCarrusel2 = "FOTOS/FotoCarrusel2.jpg";
+$fotoCarrusel3 = "FOTOS/FotoCarrusel3.jpg";
+$cards_paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium at possimus, cumque magnam, iste minus inventore vel dolorem optio sed dignissimos laboriosam minima! Magni vel deserunt aperiam illo quis?";
+$contact_us = "CONTACT US";
+$phone_number = "729 318 1906";
+$email_address = "+52 345 789 7857";
+$email_address_href = "charly@gmail.com";
+$green_background_image = "FOTOS/patas3.jpg";
+$about_title = "Acerca de nosotros";
+$about_image1 = "FOTOS/patas5.jpg";
+$about_image2 = "FOTOS/patas4.jpg";
+$about_paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis alias vitae repudiandae dolorem non, saepe consequatur deserunt iure corrupti illo eveniet iusto, dicta neque sint vero odio cupiditate laboriosam soluta magnam culpa quia perferendis! Consequatur impedit ut soluta assumenda quasi reiciendis fugit hic repellat dicta. Voluptatem architecto voluptates eos fugiat. Repudiandae illum eos corporis harum nisi laboriosam recusandae veritatis?";
+//Texto e imagenes de aboutPage.php
+$main_title = "Dive into the ultimate surfing products";
+$image1 = "FOTOS/trajedebaño.jpg";
+$product1 = "Wetsuite";
+$image2 = "FOTOS/wax.jpg";
+$product2 = "Wax";
+$image3 = "FOTOS/tabla.jpg";
+$product3 = "Surfingboard";
+$image4="FOTOS/Producto4.jpg";
+$product4 = "Quillas";
+$image5="FOTOS/Producto5.jpg";
+$product5= "Leash";
+$image6="FOTOS/Producto6.jpg";
+$product6= "Escarpines";
+$paragraph = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis labore placeat fugiat nisi quos rem repudiandae! Sint cum impedit maiores illum veniam non ab fugit iure, quas voluptatem neque tenetur cupiditate cumque recusandae ipsum doloribus quibusdam excepturi ex quo voluptate at magnam! Repellendus quos debitis quam! Officiis, temporibus facere.";
+$right_image = "FOTOS/surfista2.png";
+//Texto e imagenes de contact.php
+$main_title = "Dive into the ultimate surfing products";
+$image1 = "FOTOS/trajedebaño.jpg";
+$product1 = "Wetsuite";
+$image2 = "FOTOS/wax.jpg";
+$product2 = "Wax";
+$image3 = "FOTOS/tabla.jpg";
+$product3 = "Surfingboard";
+$paragraph = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis labore placeat fugiat nisi quos rem repudiandae! Sint cum impedit maiores illum veniam non ab fugit iure, quas voluptatem neque tenetur cupiditate cumque recusandae ipsum doloribus quibusdam excepturi ex quo voluptate at magnam! Repellendus quos debitis quam! Officiis, temporibus facere.";
+$image_sufista = "FOTOS/Surfista3.png";
+$title_meet_us = "MEET US";
+$phone_icon = "fa-solid fa-phone";
+$phone_number = "729 318 1906";
+$envelope_icon = "fa-regular fa-envelope";
+$email = "+52 345 789 7857";
+$message_icon = "fa-regular fa-message";
+$email_address = "charly@gmail.com";
+$title_pitch_us = "PITCH US";
+$pitch_text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reprehenderit accusamus pariatur optio totam obcaecati dolor aspernatur enim quos voluptate, aliquam doloribus debitis ullam similique, recusandae asperiores provident! Iste, nam?";
+// assets Wetsuite
+$main_title_wetsuites = "Wetsuites"; 
+$wetsuite1 = "FOTOS/wet1.jpg";
+$wetsuite2 = "FOTOS/wet2.jpg";
+$wetsuite3 = "FOTOS/wet3.jpg";
+$wetside = "FOTOS/wetside.jpg";
+$wetTitle1 = "Hombres";
+$wetTitle2 = "Mujer";
+$wetTitle3 = "Tendencias";
