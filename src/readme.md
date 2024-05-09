@@ -15,3 +15,4 @@ Features que fueron agregadas a la página para la evidencia final:
 http://localhost/Evidencia/src/EditPage/index.php
 
 *La base de datos debe ser añadida al equipo local, se encuentra en la carpeta SQL
+En este proyecto está configurado el puerto 3307 en el archivo db_credentials.php´, sin embargo lo debes modificar a tus necesidades
