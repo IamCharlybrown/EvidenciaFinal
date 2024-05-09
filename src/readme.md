@@ -11,4 +11,5 @@ Features que fueron agregadas a la página para la evidencia final:
 
 *se agregaron todos los titulos, parrafos, imagenes a la base de datos con sus respectivas conexiones
 
-*se agregó un crud completo para el apartado de productos al cual se puede acceder desde el siguiente link http://localhost/Evidencia/src/EditPage/index.php
+*se agregó un crud completo para el apartado de productos al cual se puede acceder desde el siguiente link:
+http://localhost/Evidencia/src/EditPage/index.php
