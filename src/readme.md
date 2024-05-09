@@ -13,3 +13,5 @@ Features que fueron agregadas a la página para la evidencia final:
 
 *se agregó un crud completo para el apartado de productos al cual se puede acceder desde el siguiente link:
 http://localhost/Evidencia/src/EditPage/index.php
+
+*La base de datos debe ser añadida al equipo local, se encuentra en la carpeta SQL
