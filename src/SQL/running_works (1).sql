@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost: 3307
--- Tiempo de generación: 09-05-2024 a las 16:47:18
+-- Tiempo de generación: 11-05-2024 a las 03:45:12
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -148,7 +148,7 @@ CREATE TABLE `individual` (
 --
 
 INSERT INTO `individual` (`id`, `navbar_title`, `about_us`, `home`, `individual`, `archive`, `contact`, `get_started`, `imagen`, `titulo`, `descripcion`, `precio`, `car`) VALUES
-(1, 'running works', 'About Us', 'Home', 'Tabla de surf', 'Menu', 'Contact', 'Get started', 'imagenes/Tabla.jpg', 'SURFINGBOARD', 'Descubre la experiencia única de surfear con nuestro increíble SURFINGBOARD. Fabricado con los mejores materiales y diseñado para brindarte el máximo rendimiento en cada ola. Nuestro SURFINGBOARD está diseñado para surfistas de todos los niveles, desde principiantes hasta profesionales. Cuenta con características innovadoras que te permitirán deslizarte suavemente sobre las olas y ejecutar maniobras con facilidad. La construcción de alta calidad garantiza durabilidad y resistencia, mientras que el diseño aerodinámico optimiza la velocidad y la maniobrabilidad. Además, la superficie antideslizante proporciona un agarre seguro, permitiéndote realizar trucos con confianza. Ya sea que estés buscando mejorar tus habilidades o simplemente disfrutar del placer de surfear, nuestro SURFINGBOARD es la elección perfecta. Explora nuevas sensaciones y lleva tu experiencia de surf a un nivel superior con el SURFINGBOARD de running Works. ¡Prepárate para vivir momentos emocionantes en cada ola!', 450.00, 'Add to car');
+(1, 'running works', 'About Us', 'Home', 'Tabla de surf', 'Menu', 'Contact', 'Get started', 'imagenes/Tabla.jpg', 'SURFINGBOARD', 'Descubre la experiencia única de surfear con nuestro increíble SURFINGBOARD. Fabricado con los mejores materiales y diseñado para brindarte el máximo rendimiento en cada ola. Nuestro SURFINGBOARD está diseñado para surfistas de todos los niveles, desde principiantes hasta profesionales. Cuenta con características innovadoras que te permitirán deslizarte suavemente sobre las olas y ejecutar maniobras con facilidad. La construcción de alta calidad garantiza durabilidad y resistencia, mientras que el diseño aerodinámico optimiza la velocidad y la maniobrabilidad. Además, la superficie antideslizante proporciona un agarre seguro, permitiéndote realizar trucos con confianza. Ya sea que estés buscando mejorar tus habilidades o simplemente disfrutar del placer de surfear, nuestro SURFINGBOARD es la elección perfecta. Explora nuevas sensaciones y lleva tu experiencia de surf a un nivel superior con el SURFINGBOARD de running Works. ¡Prepárate para vivir momentos emocionantes en cada ola!', 800.00, 'Add to car');
 
 -- --------------------------------------------------------
 
@@ -190,7 +190,31 @@ CREATE TABLE `main_index` (
 --
 
 INSERT INTO `main_index` (`navbar_title`, `about_us`, `home`, `individual`, `archive`, `contact`, `get_started`, `main_title1`, `main_title2`, `main_paragraph`, `join_us`, `ultimate_equipment`, `card1_image`, `fotoCarrusel1`, `card2_image`, `fotoCarrusel2`, `card3_image`, `fotoCarrusel3`, `cards_paragraph`, `phone_number`, `email_address`, `green_background_image`, `about_image1`, `about_image2`, `about_title`, `about_paragraph`) VALUES
-('running works', 'About Us', 'Home', 'Tabla de surf', 'Menu', 'Contact', 'Get started', 'FROM SEA WAVES', 'TO MASTERPIECE', 'We are a company that produces iconic surfing equipment. We pride ourselves in our proven track-record.', 'Join Us', 'The ultimate surfering equipment', './FOTOS/patas2.jpg', 'FOTOS/FotoCarrusel1.jpg', 'FOTOS/patas5.jpg', 'FOTOS/FotoCarrusel2.jpg', 'FOTOS/patas4.jpg', 'FOTOS/FotoCarrusel3.jpg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium at possimus, cumque magnam, iste minus inventore vel dolorem optio sed dignissimos laboriosam minima! Magni vel deserunt aperiam illo quis?', '729 318 1906', '+52 345 789 7857', 'FOTOS/patas3.jpg', 'FOTOS/patas5.jpg', 'FOTOS/patas4.jpg', 'Acerca de nosotros', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis alias vitae repudiandae dolorem non, saepe consequatur deserunt iure corrupti illo eveniet iusto, dicta neque sint vero odio cupiditate laboriosam soluta magnam culpa quia perferendis! Consequatur impedit ut soluta assumenda quasi reiciendis fugit hic repellat dicta. Voluptatem architecto voluptates eos fugiat. Repudiandae illum eos corporis harum nisi laboriosam recusandae veritatis?');
+('running works ', 'About Us', 'Home', 'Tabla de surf', 'Menu', 'Contact', 'Get started', 'FROM SEA WAVES', 'TO MASTERPIECE', 'We are a company that produces iconic surfing equipment. We pride ourselves in our proven track-record.', 'Join Us', 'The ultimate surfering equipment', './FOTOS/patas2.jpg', 'FOTOS/FotoCarrusel1.jpg', 'FOTOS/patas5.jpg', 'FOTOS/FotoCarrusel2.jpg', 'FOTOS/patas4.jpg', 'FOTOS/FotoCarrusel3.jpg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium at possimus, cumque magnam, iste minus inventore vel dolorem optio sed dignissimos laboriosam minima! Magni vel deserunt aperiam illo quis?', '729 318 1906', '+52 345 789 7857', 'FOTOS/patas3.jpg', 'FOTOS/patas5.jpg', 'FOTOS/patas4.jpg', 'Acerca de nosotros', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis alias vitae repudiandae dolorem non, saepe consequatur deserunt iure corrupti illo eveniet iusto, dicta neque sint vero odio cupiditate laboriosam soluta magnam culpa quia perferendis! Consequatur impedit ut soluta assumenda quasi reiciendis fugit hic repellat dicta. Voluptatem architecto voluptates eos fugiat. Repudiandae illum eos corporis harum nisi laboriosam recusandae veritatis?');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `menu`
+--
+
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `menu`
+--
+
+INSERT INTO `menu` (`id`, `nombre`, `img`) VALUES
+(1, 'Wetsuites', 'FOTOS/trajedebaño.jpg'),
+(2, 'Wax', 'FOTOS/wax.jpg'),
+(3, 'Surfingboard', 'FOTOS/tabla.jpg'),
+(4, 'Quillas', 'FOTOS/Producto4.jpg'),
+(5, 'Leash', 'FOTOS/Producto5.jpg'),
+(6, 'Escarpines', 'FOTOS/Producto6.jpg');
 
 -- --------------------------------------------------------
 
@@ -230,6 +254,12 @@ ALTER TABLE `individual`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `menu`
+--
+ALTER TABLE `menu`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `wetsuite_products`
 --
 ALTER TABLE `wetsuite_products`
@@ -252,10 +282,16 @@ ALTER TABLE `individual`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de la tabla `menu`
+--
+ALTER TABLE `menu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT de la tabla `wetsuite_products`
 --
 ALTER TABLE `wetsuite_products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
