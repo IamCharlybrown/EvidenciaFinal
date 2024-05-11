@@ -1,40 +1,27 @@
 <?php
 require ('./private/init.php');
 
-$result = about_page_variables();
+$result = menu_data();
 
-$row = mysqli_fetch_assoc($result);
 
-$main_title = $row['main_title'];
-$image1 = $row['image1'];
-$product1 = $row['product1'];
-$image2 = $row['image2'];
-$product2 = $row['product2'];
-$image3 = $row['image3'];
-$product3 = $row['product3'];
-$image4 = $row['image4'];
-$product4 = $row['product4'];
-$image5 = $row['image5'];
-$product5 = $row['product5'];
-$image6 = $row['image6'];
-$product6 = $row['product6'];
-$right_image = $row['right_image'];
-$navbar_title = $row['navbar_title'];
-$about_us = $row['about_us'];
-$home = $row['home'];
-$individual = $row['individual'];
-$archive = $row['archive'];
-$contact = $row['contact'];
-$get_started = $row['get_started'];
-
+$aboutData = about_page_variables();
+$aboutRow = mysqli_fetch_assoc($aboutData);
+$main_title = $aboutRow['main_title'];
+$right_image = $aboutRow['right_image'];
+$navbar_title = $aboutRow['navbar_title'];
+$about_us = $aboutRow['about_us'];
+$home = $aboutRow['home'];
+$individual = $aboutRow['individual'];
+$archive = $aboutRow['archive'];
+$contact = $aboutRow['contact'];
+$get_started = $aboutRow['get_started'];
 
 include (SHARED_PATH . 'aboutPageHeader.php');
 ?>
 
 <nav class="navbar fixed-top navbar-expand-md navbar-light bg-black">
     <div class="container-fluid"> 
-        <a class="m-2
-             navbar-brand" href="index.php">
+        <a class="m-2 navbar-brand" href="index.php">
             <?php echo $navbar_title; ?>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -76,7 +63,6 @@ include (SHARED_PATH . 'aboutPageHeader.php');
             </ul>
         </div>
     </div>
-    </div>
 </nav>
 </div>
 </div>
@@ -90,84 +76,20 @@ include (SHARED_PATH . 'aboutPageHeader.php');
             </h1><br>
 
             <div class="row row-cols-1 row-cols-md-3 justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card mx-auto" style="width: 250px;">
-                        <a href="Wetsuite.php">
-                            <img src="<?php echo $image1; ?>" class="card-img-top" alt="...">
-                        </a>
-
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <?php echo $product1; ?>
-                            </h5>
+                <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                    <div class="col-md-4 mb-3">
+                        <div class="card mx-auto" style="width: 250px;">
+                            <a href="#">
+                                <img src="<?php echo $row['img']; ?>" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    <?php echo $row['nombre']; ?>
+                                </h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card mx-auto" style="width: 250px;">
-                        <a href="#">
-                            <img src="<?php echo $image2; ?>" class="card-img-top" alt="...">
-                        </a>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <?php echo $product2; ?>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card mx-auto" style="width: 250px;">
-                        <a href="#">
-                            <img src="<?php echo $image3; ?>" class="card-img-top" alt="...">
-                        </a>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <?php echo $product3; ?>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card mx-auto" style="width: 250px;">
-                        <a href="#">
-                            <img src="<?php echo $image4; ?>" class="card-img-top" alt="...">
-                        </a>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <?php echo $product4; ?>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card mx-auto" style="width: 250px;">
-                        <a href="#">
-                            <img src="<?php echo $image5; ?>" class="card-img-top" alt="...">
-                        </a>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <?php echo $product5; ?>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card mx-auto" style="width: 250px;">
-                        <a href="#">
-                            <img src="<?php echo $image6; ?>" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <?php echo $product6; ?>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             <br>
 
@@ -177,6 +99,8 @@ include (SHARED_PATH . 'aboutPageHeader.php');
         </div>
     </div>
 </div>
+
 <?php
+// Incluir el pie de página
 include (SHARED_PATH . 'footer.php');
 ?>

@@ -48,6 +48,7 @@
                     <h5 class="card-title">Administrar Menu</h5>
                     <p class="card-text">Administra los contenidos de la página del Menu.</p>
                     <a href="aboutPage_edit.php" class="btn btn-primary">Acceder</a>
+                    <a href="../crudMenu/indexMenu.php" class="btn btn-primary">Acceder a inventario</a>
                 </div>
             </div>
             <div class="card mb-4">
