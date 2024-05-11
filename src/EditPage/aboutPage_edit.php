@@ -5,36 +5,22 @@ $result = aboutPage_data();
 $data = mysqli_fetch_assoc($result);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $navbar_title = $_POST['navbar_title'];
+    $about_us = $_POST['about_us'];
+    $home = $_POST['home'];
+    $individual = $_POST['individual'];
+    $archive = $_POST['archive'];
+    $contact = $_POST['contact'];
+    $get_started = $_POST['get_started'];
+    $main_title = $_POST['main_title'];
+    $right_image = $_POST['right_image'];
 
-  $navbar_title = $_POST['navbar_title'];
-  $about_us = $_POST['about_us'];
-  $home = $_POST['home'];
-  $individual = $_POST['individual'];
-  $archive = $_POST['archive'];
-  $contact = $_POST['contact'];
-  $get_started = $_POST['get_started'];
-  $main_title = $_POST['main_title'];
-  $image1 = $_POST['image1'];
-  $product1 = $_POST['product1'];
-  $image2 = $_POST['image2'];
-  $product2 = $_POST['product2'];
-  $image3 = $_POST['image3'];
-  $product3 = $_POST['product3'];
-  $image4 = $_POST['image4'];
-  $product4 = $_POST['product4'];
-  $image5 = $_POST['image5'];
-  $product5 = $_POST['product5'];
-  $image6 = $_POST['image6'];
-  $product6 = $_POST['product6'];
-  $right_image = $_POST['right_image'];
+    // Actualizar los campos que no son productos ni imágenes de productos
+    $result = update_aboutPage($navbar_title, $about_us, $home, $individual, $archive, $contact, $get_started, $main_title, $right_image);
 
-
-  $result = update_aboutPage($navbar_title, $about_us, $home, $individual, $archive, $contact, $get_started, $main_title, $image1, $product1, $image2, $product2, $image3, $product3, $image4, $product4, $image5, $product5, $image6, $product6, $right_image);
-
-  header("Location: {$_SERVER['REQUEST_URI']}");
-  exit;
+    header("Location: {$_SERVER['REQUEST_URI']}");
+    exit;
 }
-
 
 include (SHARED_PATH . 'aboutPageHeader.php');
 ?>
@@ -84,54 +70,6 @@ include (SHARED_PATH . 'aboutPageHeader.php');
         <div class="form-group">
           <label for="main_title" class="fw-semibold fs-5">Título principal</label>
           <input type="text" class="form-control" id="main_title" name="main_title" value="<?= $data['main_title'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="image1" class="fw-semibold fs-5">Imagen 1</label>
-          <input type="text" class="form-control" id="image1" name="image1" value="<?= $data['image1'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="product1" class="fw-semibold fs-5">Producto 1</label>
-          <input type="text" class="form-control" id="product1" name="product1" value="<?= $data['product1'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="image2" class="fw-semibold fs-5">Imagen 2</label>
-          <input type="text" class="form-control" id="image2" name="image2" value="<?= $data['image2'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="product2" class="fw-semibold fs-5">Producto 2</label>
-          <input type="text" class="form-control" id="product2" name="product2" value="<?= $data['product2'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="image3" class="fw-semibold fs-5">Imagen 3</label>
-          <input type="text" class="form-control" id="image3" name="image3" value="<?= $data['image3'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="product3" class="fw-semibold fs-5">Producto 3</label>
-          <input type="text" class="form-control" id="product3" name="product3" value="<?= $data['product3'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="image4" class="fw-semibold fs-5">Imagen 4</label>
-          <input type="text" class="form-control" id="image4" name="image4" value="<?= $data['image4'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="product4" class="fw-semibold fs-5">Producto 4</label>
-          <input type="text" class="form-control" id="product4" name="product4" value="<?= $data['product4'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="image5" class="fw-semibold fs-5">Imagen 5</label>
-          <input type="text" class="form-control" id="image5" name="image5" value="<?= $data['image5'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="product5" class="fw-semibold fs-5">Producto 5</label>
-          <input type="text" class="form-control" id="product5" name="product5" value="<?= $data['product5'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="image6" class="fw-semibold fs-5">Imagen 6</label>
-          <input type="text" class="form-control" id="image6" name="image6" value="<?= $data['image6'] ?>">
-        </div>
-        <div class="form-group">
-          <label for="product6" class="fw-semibold fs-5">Producto 6</label>
-          <input type="text" class="form-control" id="product6" name="product6" value="<?= $data['product6'] ?>">
         </div>
         <div class="form-group">
           <label for="right_image" class="fw-semibold fs-5">Imagen de la derecha</label>

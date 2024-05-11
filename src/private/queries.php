@@ -234,29 +234,18 @@ function aboutPage_data() {
     return mysqli_query($db, $sql);
 }
 
-function update_aboutPage($navbar_title, $about_us, $home, $individual, $archive, $contact, $get_started, $main_title, $image1, $product1, $image2, $product2, $image3, $product3, $image4, $product4, $image5, $product5, $image6, $product6, $right_image) {
-    global $db;
-    $sql = "UPDATE about_page SET 
-            navbar_title='$navbar_title', 
-            about_us='$about_us', 
-            home='$home', 
-            individual='$individual', 
-            archive='$archive', 
-            contact='$contact', 
-            get_started='$get_started', 
-            main_title='$main_title', 
-            image1='$image1', 
-            product1='$product1', 
-            image2='$image2', 
-            product2='$product2', 
-            image3='$image3', 
-            product3='$product3', 
-            image4='$image4', 
-            product4='$product4', 
-            image5='$image5', 
-            product5='$product5', 
-            image6='$image6', 
-            product6='$product6', 
-            right_image='$right_image'";
-    return mysqli_query($db, $sql);
+function update_aboutPage($navbar_title, $about_us, $home, $individual, $archive, $contact, $get_started, $main_title, $right_image) {
+  global $db;
+  $sql = "UPDATE about_page SET 
+          navbar_title='$navbar_title', 
+          about_us='$about_us', 
+          home='$home', 
+          individual='$individual', 
+          archive='$archive', 
+          contact='$contact', 
+          get_started='$get_started', 
+          main_title='$main_title', 
+          right_image='$right_image'";
+  return mysqli_query($db, $sql);
 }
+
