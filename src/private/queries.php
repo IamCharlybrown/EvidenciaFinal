@@ -42,10 +42,23 @@ function wetsuites_data()
   return mysqli_query($db, $sql);
 }
 
+function menu_data()
+{
+  global $db;
+  $sql = "SELECT * FROM menu";
+  return mysqli_query($db, $sql);
+}
 function nuevo_wetsuite($wetsuite, $img)
 {
   global $db;
   $sql = "INSERT INTO wetsuite_products (nombre_wetsuite, img) VALUES ('$wetsuite', '$img')";
+  return mysqli_query($db, $sql);
+}
+
+function nuevo_menu($menu, $img)
+{
+  global $db;
+  $sql = "INSERT INTO menu (nombre, img) VALUES ('$menu', '$img')";
   return mysqli_query($db, $sql);
 }
 
@@ -56,10 +69,24 @@ function wetsuite_id($id)
   return mysqli_query($db, $sql);
 }
 
+function menu_id($id)
+{
+  global $db;
+  $sql = "SELECT * FROM menu WHERE id=$id";
+  return mysqli_query($db, $sql);
+}
+
 function actualizar_wetsuite($id, $nombre_wetsuite, $img)
 {
   global $db;
   $sql = "UPDATE wetsuite_products SET nombre_wetsuite ='$nombre_wetsuite', img='$img' WHERE id=$id";
+  return mysqli_query($db, $sql);
+}
+
+function actualizar_menu($id, $nombre, $img)
+{
+  global $db;
+  $sql = "UPDATE menu SET nombre ='$nombre', img='$img' WHERE id=$id";
   return mysqli_query($db, $sql);
 }
 
@@ -70,6 +97,12 @@ function eliminar_wetsuite($id)
   return mysqli_query($db, $sql);
 }
 
+function eliminar_menu($id)
+{
+  global $db;
+  $sql = "DELETE FROM menu WHERE id=$id";
+  return mysqli_query($db, $sql);
+}
 function main_index_data()
 {
   global $db;
