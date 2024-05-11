@@ -22,7 +22,7 @@ include (SHARED_PATH . 'aboutHeader.php');
         <form action="storeMenu.php" method="post">
             <div class="mb-3 mt-3">
               <label for="" class="form-label">Nombre</label>
-              <input type="text" name="nombre_menu" id="" class="form-control">
+              <input type="text" name="nombre" id="" class="form-control">
               <label for="" class="form-label">IMG</label>
               <input type="text" name="img" id="" class="form-control">
             </div>
